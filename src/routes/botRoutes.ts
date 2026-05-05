@@ -126,12 +126,9 @@ router.get("/products", botAuth, async (req, res) => {
     });
 
     res.json({ success: true, data: products });
-  } catch (err) {
-    console.error("Product search error:", err);
-    res.status(500).json({
-      success: false,
-      error: { code: "SERVER_ERROR", message: "Failed to fetch products" },
-    });
+  } catch (error) {
+    console.error("PRODUCT FETCH ERROR:", error);
+    throw error;
   }
 });
 
