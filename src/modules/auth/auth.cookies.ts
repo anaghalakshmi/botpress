@@ -1,4 +1,4 @@
-import { isProduction } from "../../../src/config/env";
+import { isProduction } from "../../config/env";
 import type { CookieOptions } from "express";
 
 // ── Refresh token cookie ───────────────────────────────────────────────────
