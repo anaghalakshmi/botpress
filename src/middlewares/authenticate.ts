@@ -31,7 +31,7 @@ export function authenticate(
     // Attach to request — available in all subsequent middleware and handlers
     req.user = {
       id: payload.sub,
-      email: payload.email,
+      sessionId: payload.sessionId,
       role: payload.role as unknown as
         | "customer"
         | "admin"

@@ -2,7 +2,7 @@ import type { Request, Response } from "express";
 import { orderService } from "../service/orders.service";
 import { asyncHandler } from "../../../utils/asyncHandler";
 import { sendSuccess, sendPaginated } from "../../../utils/response";
-import { UserRole } from "../../auth/auth.types";
+// import { UserRole } from "../../auth/auth.types";
 
 // POST /api/v1/orders — place an order from cart
 export const placeOrder = asyncHandler(async (req: Request, res: Response) => {

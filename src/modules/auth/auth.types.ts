@@ -22,6 +22,7 @@ export interface AccessTokenPayload {
   sub: string; // user ID
   email: string;
   role: UserRole;
+  sessionId: string; // Added sessionId property
   // iat and exp are added automatically by jsonwebtoken
 }
 
