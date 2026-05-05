@@ -156,6 +156,7 @@ async function issueTokenPair(user: SafeUser): Promise<AuthTokens> {
     sub: user.id,
     email: user.email,
     role: user.role,
+    sessionId: "",
   });
 
   // 2. Create a DB record for the refresh token so it can be revoked
